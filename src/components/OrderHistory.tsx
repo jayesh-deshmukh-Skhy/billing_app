@@ -25,7 +25,7 @@ const OrderHistory: React.FC = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await fetch('/api/orders');
+      const response = await fetch('http://localhost:3001/api/orders');
       const data = await response.json();
       setOrders(data);
     } catch (error) {
